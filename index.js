@@ -4,7 +4,7 @@ import {
     inputPass,
     domain,
 } from 'help.js';
-import {matchCredentials} from '/validate.js';
+import {matchCredentials} from 'validate.js';
 document.addEventListener('DOMContentLoaded', function() {
     button()
     console.log()
