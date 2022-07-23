@@ -1,4 +1,4 @@
-import {account} from'./help.js'
+import {account} from'help.js'
 export const matchCredentials = (email, password) => {
     const match = account.find(el => {
        return el.email === email && el.password === password;
