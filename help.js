@@ -1,5 +1,5 @@
 //những thứ cần thiết
-export const domain='http://127.0.0.1:5500/'
+export const domain='https://thav2003.github.io/website_school/'
 export const category=[];
 export const account=[];
 export const test=[];//mảng 1 chiều nhận toàn bộ bài thi
