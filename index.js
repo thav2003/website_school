@@ -3,8 +3,8 @@ import {
     inputName,
     inputPass,
     domain,
-} from 'help.js';
-import {matchCredentials} from 'validate.js';
+} from './help.js';
+import {matchCredentials} from './validate.js';
 document.addEventListener('DOMContentLoaded', function() {
     button()
     console.log()
