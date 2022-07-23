@@ -1,0 +1,232 @@
+*,body{
+    font-family:Tahoma,Arial,sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*======================Header======================*/
+
+#header {
+    width: 100%;
+    height: 50px;
+    display: flex;   
+    justify-content: flex-start;
+    background: rgb(218, 51, 22);
+    position: fixed;
+    z-index: 1;
+}
+/*============_logo-header_============*/
+#logo-header {
+    margin-left: 20px;
+    margin-right: 10px;
+    display:flex;
+    align-items:center;
+    height: 50px;
+}
+#logo-header    img {
+    width:50px;
+    height:50px;
+}
+
+/*============_logo-header_============*/
+
+/*============_Menu_============*/
+#navMenu{
+    width: 40%;
+    
+}
+#navMenu ul{
+    display: flex;/* khung */
+    flex-direction: row;/* khung */
+    justify-content:space-evenly;
+    height: 50px;
+    
+}
+#navMenu ul ul{
+    display: none;/* khung */
+    flex-direction: column;/* khung */
+    margin-top:25px/*canh với line-height của thẻ a*/   
+}
+
+#navMenu ul ul li{
+    position: relative;/* khung */
+}
+#navMenu ul ul li ul{
+    display:none;
+    position:absolute;/* khung */
+    top:0;/* khung */
+    left:100%;/* khung */
+}
+#navMenu ul li{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+#navMenu ul li a{
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#navMenu ul li ul li{
+    border-radius: 5px;
+}
+#navMenu ul li ul li a{
+    border-radius: 5px;
+    background: rgba(229,231,235);
+}
+#navMenu ul li ul li ul li{
+    width: 100px;/* menu cấp 3 riêng biệt nên tự set height*/
+    
+}
+#navMenu ul li ul li ul li a{
+    border-radius: 5px;
+    background: rgba(229,231,235);
+}
+
+#navMenu ul a:hover ~ ul{
+    display: flex;
+}
+#navMenu ul:hover{
+    display: flex;
+}
+
+
+#navMenu ul li a:hover{
+    background:rgb(255, 102, 0);
+    border-radius: 5px;
+    border: 1px solid #11691f;
+    transition: all 0.4s ease-in;
+}
+
+#navMenu ul li ul li a:hover{
+    background:rgb(248, 104, 7);
+    border-radius: 5px;
+    border: 1px solid #11691f;
+    transition: all 0.4s ease-in;
+}
+/* css lại cho từng cái menu cấp 3 vì nó là position abosulute; mỗi item trong menu cấp 3 tương đương 25px*/
+
+#navMenu ul li ul li:first-child a:hover ~ul{
+    margin-top:75px;
+}
+#navMenu ul li ul li:first-child ul:hover{
+    margin-top:75px;
+}
+#navMenu ul li ul li:nth-child(2) a:hover ~ul{
+    margin-top:50px;
+}
+#navMenu ul li ul li:nth-child(2) ul:hover{
+    margin-top:50px;
+}
+
+
+
+/*============_Menu_============*/
+
+#main{
+    padding-top:50px
+}
+
+.container{
+    
+    min-height: 100vh;
+    padding:50px;
+    display: flex;
+    flex-direction: row;
+}
+#containerLeft{
+    flex-grow:1;
+    width:70%;
+  
+    padding:20px;
+    
+}
+#containerRight{
+    flex-grow:1;
+    width:30%;
+    padding:20px;
+    background:yellow;
+    display: flex;
+    flex-direction: column
+}
+#view{
+    display:flex;
+    flex-direction:column
+}
+.divQuestion{
+    height:150px;
+}
+.divButton{
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+.divButton>input{
+    margin:5px;
+    padding:5px;
+    cursor: pointer;
+}
+.divButtonAnswer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+.divButtonAnswer >div{
+    margin: 5px;
+}
+.divButtonAnswer>div >input{
+    margin: 5px;
+}
+.WrapQuestion{
+    position: relative;
+}
+.questions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.select{
+    display:none;
+}
+.selected{
+    display:flex
+}
+
+
+
+.icon-clock {
+    background: left center url('../public/assets/clock_icon.png') no-repeat ;
+    padding-left: 30px;
+}
+#time_view{
+    font-size: 20px;
+}
+#desClock{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+#information{
+    height: 100px;
+}
+table.list{
+    border-collapse: collapse;
+    width: 100%;
+    empty-cells: show;
+    border: 1px solid #E0E0E0;
+    font-size: 14px;
+    line-height: 50px;
+
+    
+}
+table.list td {
+    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    padding:5px
+}
+
+#submitButton {
+    height:50px;
+    display: flex;
+    justify-content: center
+}

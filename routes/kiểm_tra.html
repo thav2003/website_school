@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/kiểm_tra.css">
+
+    <title>Kiểm tra</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo-header">
+            <a href="main.html" title="Logo">
+                <img src="../public/assets/favicon.png" href="#" alt="logo">
+            </a>
+        </div>
+        <nav id="navMenu">
+            <ul>
+                <li>
+                    <a href="#" title="Đề ôn">Đề ôn</a>
+                </li>
+                <li>
+                    <a href="#" title="Tài liệu tham khảo">Tài liệu</a>
+                    <ul>
+                        <li>
+                            <a href="#" title="Tài liệu tham khảo">item 21</a>
+                            <ul>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 31</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 32</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 33</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 34</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="Tài liệu tham khảo">item 22</a>
+                            <ul>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 35</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 36</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tài liệu tham khảo">item 37</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" title="Kết quả">Kết quả</a>
+                </li>
+                <li>
+                    <a href="#" title="Sự kiện">Sự kiện</a>
+                </li>
+                <li>
+                    <a href="#" title="Liên hệ">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </div>
+    <div id="main">
+        <div class="container">
+            <div id="containerLeft">
+                <div id="view">
+
+                </div>
+
+                <form class="formAnswer">
+                    <div class="divButtonAnswer">
+                        <div>
+                            <input type="radio" name="answer"><label for="answer"><span>Chọn đáp án A</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer"><label for="answer"><span>Chọn đáp án B</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer"><label for="answer"><span>Chọn đáp án C</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer"><label for="answer"><span>Chọn đáp án D</span></label>
+                        </div>
+                    </div>
+                    <div class="divButton">
+                        <input type="button" value="<< Câu trước" id="btnPrev">
+                        <input type="button"value="Câu kế tiếp >>" id="btnNext">
+                    </div>
+                </form>
+            </div>
+            <div id="containerRight">
+                <div id="clock">
+                    <span class="icon-clock" id="time_view"> 0 : 0 : 0</span>
+                </div>
+                <div id="desClock">
+                    <p>Thời gian làm bài thi trắc nghiệm</p>
+                </div>
+               
+                <div id="information">
+                    <table class="list">
+                        <tbody>
+                            <tr>
+                                <td width="80">Họ và tên</td>
+                                <td><strong>Anh Vũ</strong></td>
+                            </tr>
+                            <tr>
+                                <td width="80">Lớp</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td width="80" valign="top">MSSV</td>
+                                <td valign="top">SE172485</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="submitButton">
+                    
+                        <a  href="#"><span>Nộp bài thi và xem kết quả</span></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+    <script type="module" src="../js/kiểm_tra.js"></script>
+</body>
+
+</html>
